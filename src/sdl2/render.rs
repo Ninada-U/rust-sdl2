@@ -549,7 +549,7 @@ impl<T: RenderTarget> Canvas<T> {
     ///     texture_creator.create_texture_target(None, 100, 100).unwrap();
     /// let mut square_texture2 : Texture =
     ///     texture_creator.create_texture_target(None, 100, 100).unwrap();
-    /// let textures : Vec<(&mut Texture, TextureColor)> = vec![
+    /// let textures : [(&mut Texture, TextureColor); 2] = [
     ///     (&mut square_texture1, TextureColor::Yellow),
     ///     (&mut square_texture2, TextureColor::White)
     /// ];
