@@ -174,7 +174,7 @@ fn dummy_texture<'a>(canvas: &mut Canvas<Window>, texture_creator: &'a TextureCr
                     // drawing pixel by pixel isn't very effective, but we only do it once and store
                     // the texture afterwards so it's still alright!
                     if (i+j) % 7 == 0 {
-                        // this doesn't mean anything, there was some trial and serror to find
+                        // this doesn't mean anything, there was some trial and error to find
                         // something that wasn't too ugly
                         texture_canvas.set_draw_color(Color::RGB(192, 192, 192));
                         texture_canvas.draw_point(Point::new(i as i32, j as i32))
